@@ -12,7 +12,7 @@ namespace Circusclasses
     {
         small = 1,
         medium = 3,
-        big = 5,
+        large = 5,
     }
     public enum Type
     {
@@ -21,18 +21,29 @@ namespace Circusclasses
     }
     public class Animal
     {
+        public string name { get; set; }
         public Size size { get; set; }
         public Type type { get; set; }
+
+        public Animal() 
+        {
+        }
 
         public Animal(Size size, Type type)
         {
             this.size = size;
             this.type = type;   
         }
+        public Animal(string name, Size size, Type type)
+        {
+            this.name = name;
+            this.size = size;
+            this.type = type;
+        }
 
         public override string ToString()
         {
-            return "The animal is a " + type.ToString() + " and is of " + size + " size";
+            return name.ToString() + " , " + size.ToString() + " , " + type.ToString();
         }
     }
 }
