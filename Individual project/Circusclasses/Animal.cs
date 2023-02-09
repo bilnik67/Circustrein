@@ -22,8 +22,8 @@ namespace Circusclasses
     public class Animal
     {
         private string name;
-        private Size size;
-        private Type type;
+        public Size size;
+        public Type type;
         private static int Animalcount = 0;
 
       

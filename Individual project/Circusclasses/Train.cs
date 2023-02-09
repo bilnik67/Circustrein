@@ -8,5 +8,11 @@ namespace Circusclasses
 {
     public class Train
     {
+        private List<Wagon> wagonList;
+
+        public void Addwagon(Wagon wagon)
+        {
+            wagonList.Add(wagon);   
+        }
     }
 }

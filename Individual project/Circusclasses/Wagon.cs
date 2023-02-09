@@ -9,10 +9,19 @@ namespace Circusclasses
     
     public class Wagon
     {
-        private const int capacity = 10;
+        private int capacity = 10;
 
-        private List<string> animals = new List<string>();
+        private List<Animal> animals = new List<Animal>();
 
+        public Wagon(Animal animal)
+        {
+            AddAnimal(animal);
+        }
+        public void AddAnimal(Animal animal)
+        {
+            animals.Add(animal);
+            capacity -= (int)animal.size;
+        }
 
 
     }

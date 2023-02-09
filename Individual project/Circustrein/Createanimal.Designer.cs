@@ -1,6 +1,6 @@
 ﻿namespace Circustrein
 {
-    partial class Form1
+    partial class Createanimal
     {
         /// <summary>
         ///  Required designer variable.
@@ -72,7 +72,6 @@
             this.label3.Size = new System.Drawing.Size(57, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Size";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -83,7 +82,6 @@
             this.label4.Size = new System.Drawing.Size(77, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Name";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
@@ -132,6 +130,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Sort";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -161,7 +160,6 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
