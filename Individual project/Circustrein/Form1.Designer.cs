@@ -98,9 +98,9 @@
             this.label5.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(264, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(267, 36);
+            this.label5.Size = new System.Drawing.Size(268, 36);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Create animals";
+            this.label5.Text = "Create animols";
             // 
             // comboBox2
             // 
