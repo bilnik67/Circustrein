@@ -21,24 +21,26 @@ namespace Circusclasses
     }
     public class Animal
     {
-        public string name { get; set; }
-        public Size size { get; set; }
-        public Type type { get; set; }
+        private string name;
+        private Size size;
+        private Type type;
+        private static int Animalcount = 0;
 
-        public Animal() 
-        {
-        }
-
-        public Animal(Size size, Type type)
-        {
-            this.size = size;
-            this.type = type;   
-        }
+      
         public Animal(string name, Size size, Type type)
         {
             this.name = name;
             this.size = size;
             this.type = type;
+           
+        }
+        public Animal(Size size, Type type ) : this("Nameless animal " + Animalcount.ToString(), size, type)
+        {
+            
+        }
+        public int IncrementAnimal()
+        {
+            return Animalcount++;
         }
 
         public override string ToString()

@@ -48,7 +48,7 @@
             "small\t",
             "medium",
             "large"});
-            this.comboBox1.Location = new System.Drawing.Point(138, 207);
+            this.comboBox1.Location = new System.Drawing.Point(138, 196);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(155, 28);
             this.comboBox1.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(43, 201);
+            this.label3.Location = new System.Drawing.Point(43, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 31);
             this.label3.TabIndex = 3;
@@ -130,7 +130,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(374, 50);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Confirm";
+            this.button1.Text = "Sort";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -161,6 +161,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

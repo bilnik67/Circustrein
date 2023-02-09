@@ -28,12 +28,25 @@ namespace Circustrein
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-
-            Animal animal = new Animal((Circusclasses.Size)Enum.Parse(typeof(Circusclasses.Size), comboBox1.SelectedItem.ToString()),
+        {    
+            if (textBox1.Text == "")
+            {
+                Animal animal = new Animal((Circusclasses.Size)Enum.Parse(typeof(Circusclasses.Size), comboBox1.SelectedItem.ToString()),
+                         (Circusclasses.Type)Enum.Parse(typeof(Circusclasses.Type), comboBox2.SelectedItem.ToString()));
+                animal.IncrementAnimal();
+                listBox1.Items.Add(animal);
+            } else
+            {
+                Animal animal = new Animal(textBox1.Text, (Circusclasses.Size)Enum.Parse(typeof(Circusclasses.Size), comboBox1.SelectedItem.ToString()),
                          (Circusclasses.Type)Enum.Parse(typeof(Circusclasses.Type), comboBox2.SelectedItem.ToString()));
 
-            listBox1.Items.Add(animal);
+                listBox1.Items.Add(animal);
+            }          
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
